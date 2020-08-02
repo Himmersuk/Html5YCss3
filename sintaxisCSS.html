@@ -5,41 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintaxis Css</title>
     <style>
-        /*
-        Comentario en css
-        */
-        /*
-        -selector (etiqueta, id, clase)
-
-        selector{
-            propiedad:valor;
-        }
-        */
-        body{
-            background: red;
-        }
-        /*
-        por id es #
-        */
-        #caja{
-            width: 200px;
-            height: 200px;
-            background: yellow;
-        }
-
-        /*por clase es . (punto)*/
-        .grupo{
-            width: 200px;
-            height: 200px;
-            background: blue;
-            margin: 10px;
-        }
+       header{
+           width: 1000px;
+           height: 200px;
+           background: blue;
+           margin: 20px;
+           border: 5px solid yellow;
+           padding: 20px;
+       }
+       #logo{
+           width: 200px;
+           height: 60px;
+           background: green;
+           border: 5px solid white;
+           border-radius: 10px;
+       }
     </style>
 </head>
 <body>
-    <div id="caja"></div>
-    <div class="grupo"></div>
-    <div class="grupo"></div>
-    <div class="grupo"></div>
+    <header>
+        <div id="logo">
+            Logotipo
+        </div>
+    </header>
+    
 </body>
 </html>
