@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="himmerSuk">
+    <meta name="description" content="Html5 y Css3 2020">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.png">
+
+    <title>Html5 y Css3 2020</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logotipo">Logotipo</div>
+    </header>
+    <center>
+        <h3>Formulario</h3>
+        <form action="">
+            <label for="nombre">Nombre de usuario</label>
+            <input type="text" required placeholder="nombre de usuario" name="nombre" id="nombre" value="">
+            <br>
+            <label for="email">Entrada de email</label>
+            <input type="email" required name="email" id="email" value="" placeholder="email@aaa.com">
+            <br>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass" value="">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" value="" min="0" max="20">
+
+            <br>
+            <select name="sexo" id="sexo">
+                <option value="1">Hombre</option>
+                <option value="0">Mujer</option>
+            </select>
+            <br>
+            <label for="rojo">Rojo</label>
+            <input type="checkbox" name="rojo" id="rojo">
+            <label for="verde">Verde</label>
+            <input type="checkbox" name="verde" id="verde">
+
+            <br>
+            <label for="azul">Azul</label>
+            <input type="radio" name="color" id="azul" checked>
+            <label for="negro">Negro</label>
+            <input type="radio" name="color" id="negro">
+
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </center>
+    <nav>Barra de navegación</nav>
+    <section>Sección principal</section>
+    <aside>
+        <div class="noticias">Noticia 1</div>
+        <div class="noticias">Noticia 2</div>
+
+    </aside>
+    <article>Articulo</article>
+
+    <h1>Titulo</h1>
+    <h2>Titulo</h2>
+    <h3>Titulo</h3>
+    <h4>Titulo</h4>
+    <h5>Titulo</h5>
+    <h6>Titulo</h6>
+    <p>Párrafo</p>
+
+
+    <figure>
+        <img src="img/imagen.jpg" alt="">
+    </figure>
+    <figcaption>Pie de pagina de la imagen</figcaption>
+
+    <ol>
+        <li>Carro</li>
+        <li>Barco</li>
+        <li>Avión</li>
+    </ol>
+    <ul>
+        <li>Carro</li>
+        <li>Barco</li>
+        <li>Avión</li>
+    </ul>
+
+    <!-- tabla tipo 1-->
+    <table border="1">
+
+        <tr>
+            <th>Mes</th>
+            <th>Ahorro</th>
+        </tr>
+        <tr>
+            <th>Enero</th>
+            <th>100</th>
+        </tr>
+    </table>
+
+    <!--tabla tipo 2-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Ahorro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2020</td>
+                <td>10000</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <h1>Resultados del examen</h1>
+    <p>Himmer: <meter value="94" , min="0" max="100" high="90"></meter> </p>
+    <p>HimmerSuk: <meter value="60" , min="0" max="100" high="90"></meter></p>
+
+    <h2>Resultado de ventas</h2>
+    <p>Enero: <progress value="94" , min="0" max="100"></progress> </p>
+    <p>Febrero: <progress value="60" , min="0" max="100"></progress></p>
+
+
+    <audio autoplay controls loop preload="auto">
+        <!--si no se mencionan los atributos no se muestran-->
+        <!--tipos de formato más usados
+    Ogg VORBIS .ogg
+    MP3        .mp3
+    WAv        .wav
+    ACC        .mp4a, .m4b, m4p, mp4, .acc
+-->
+        <source src="audio/audio.m4a" type="audio/mp4">
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <source src="audio/audio.ogg" type="audio/ogg">
+    </audio>
+
+    <video autoplay loop controls width="500" height="200">
+        <!--Extenciones más populares
+        THEORA OGG .ogv
+        MP4 .mp4
+        WEBM .webm
+         -->
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.ogv" type="video/ogv">
+        <source src="video/video.webm" type="video/wepm">
+    </video>
+
+    <!-- puede ser mapa  entre otras cosas-->
+    <iframe src="aqui url de video (embed en caso de ser necesario)" frameborder="0" width="500" height="280"
+        allowfullscreen></iframe>
+
+    <footer>Pie de página</footer>
+</body>
+
+</html>
