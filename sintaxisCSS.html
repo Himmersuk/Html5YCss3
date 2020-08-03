@@ -1,30 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintaxis Css</title>
     <style>
-        .grupo{
-            width: 200px;
-            height: 200px;
-            margin: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
 
-        #c1{
-            background: green;
+        header {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 120px;
+            background: #444;
+
         }
-        #c2{
-            background: #FF22AA;
+
+        #logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 200px;
+            height: 60px;
+            background: #ccc;
         }
-        #c3{
-            background: rgba(134, 111, 12, .5);
+
+        #icono1{
+            top: 42px;
+            right: 120px;
         }
+        #icono2{
+            top: 42px;
+            right: 72px;
+        }
+        #icono3{
+            top: 42px;
+            right: 19px;
+        }
+
+        nav {
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 48px;
+        }
+
+        .botones{
+            float: left;
+            width: 196px;
+            height: 48px;
+            margin: 0 2px ;
+            background: #333;
+        }
+        .redes{
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            background: #ccc;
+            border-radius: 100%;
+        }
+
+        #top {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 192px;
+        }
+
+        #top ul{
+            width: 1010px;
+            height: 10px;
+        }
+        
+        #top ul li{
+            float: left;
+            width: 326px;
+            height: 192px;
+            margin-right: 10px;
+            background: black;
+        }
+        section {
+            position: relative;
+            margin: 26px auto;
+            width: 1000px;
+            height: 453px;
+            background: #BBB;
+        }
+
+        aside#izq{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #aaa;
+        }
+
+        aside#der{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #aaa;
+        }
+
+        article{
+            position: absolute;
+            left: 200px;
+            top: 0;
+            width: 600px;
+            height: 453px;
+            background: #333;
+        }
+
+        footer {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 76px;
+            background: #888;
+        }
+
     </style>
 </head>
+
 <body>
-   <div id="c1"  class="grupo"></div>
-   <div id="c2"  class="grupo"></div>
-   <div id="c3"  class="grupo"></div>
+    <header>
+        <div id="logo"></div>
+
+
+        <div id="icono1" class="redes"></div>
+        <div id="icono2" class="redes"></div>
+        <div id="icono3" class="redes"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+        </ul>
+    </nav>
+
+    <div id="top">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <section>
+        <aside id="izq"></aside>
+        <article></article>
+        <aside id="der"></aside>
+    </section>
+    <footer></footer>
 </body>
+
 </html>
